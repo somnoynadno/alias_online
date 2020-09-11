@@ -12,13 +12,13 @@ This app works with our awesome Alias API: https://github.com/amoniaka-knabino/a
 
 1. Follow installation instruction and create API on your server side *(or use ours)*
 
-2. Change **BASE_URL** contsant in src/http/API.js up to your IP address
+2. Change **BASE_URL** constant in src/http/API.js up to your IP address
 
 3. Build debug or release application with npm scripts (e.g. ``` $ react-native run-android ```)
 
 ### Alternative
 
-Download builded APK: *will be able in future*
+Download precompiled APK here: *http://somnoynadno.ru/static/alias/bin* (choose the latest version)
 
 ## Copyrights
 

@@ -1,5 +1,5 @@
 class API {
-    BASE_URL = 'http://95.182.120.116:3030';
+    BASE_URL = 'http://alias.somnoynadno.ru';
     DEBUG = true;
     token = null;
     gameUUID = null;

@@ -145,8 +145,15 @@ class GameScreen extends React.Component {
             <View style={styles.container}>
                 <View style={styles.flexbox}>
                     <View style={{alignItems: 'center'}}>
-                        <Text>UUID для подключения: </Text>
-                        <Text style={{marginBottom: 10}} selectable={true}>{this.state.gameInfo['UUID']}</Text>
+                        {this.state.gameInfo['PlayersTokens'] !== undefined ?
+                            <View>
+                                <Text>UUID для подключения: </Text>
+                                <Text selectable={true}>{this.state.gameInfo['UUID']}</Text>
+                                <Text style={{marginBottom: 15}}>{"Игроков в лобби: " + this.state.gameInfo['PlayersTokens'].length.toString()}</Text>
+                            </View>
+                            :
+                            <View />
+                        }
                         {api.isCreator === true ?
                             this.state.gameIsStarted ?
                                 <TouchableOpacity
